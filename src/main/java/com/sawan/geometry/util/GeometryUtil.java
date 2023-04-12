@@ -31,6 +31,9 @@ public class GeometryUtil {
 		return getGeometryFactory(4326); //new GeometryFactory(new PrecisionModel(), 4326);
 	}
 	
+	public static GeometryFactory getDefaultGeometryFactory() {
+		return defaultGometryFactory;
+	}
 	/**
 	 * This function is used to {@code GeometryFactory} with defined {@code SRID}.
 	 * @param SRID is CRS <i>(Coordinate Reference System)</i> projection.
